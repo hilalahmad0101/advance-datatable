@@ -7,12 +7,12 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     library: 'MyDatatables',
     libraryTarget: 'umd',
-    globalObject: 'this',
+    globalObject: 'this',  // Ensure compatibility with different environments
   },
   module: {
     rules: [
       {
-        test: /\.css$/i,
+        test: /\.css$/i, 
       },
     ],
   },
